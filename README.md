@@ -45,3 +45,32 @@ IF(
     "Churned Customer",
     "Active Customer"
 )
+```
+
+### 2. Core KPI Measures
+```dax
+Total Customers = DISTINCTCOUNT('ecommerce_analytics_db ecommerce_master_final'[customer_id])
+
+Churned Customers = 
+CALCULATE(
+    [Total Customers],
+    'ecommerce_analytics_db ecommerce_master_final'[customer_status] = "Churned Customer"
+)
+
+Active Customers = [Total Customers] - [Churned Customers]
+
+Churn Rate % = DIVIDE([Churned Customers], [Total Customers], 0) * 100
+```
+
+## 📈 Key Insights & Strategic Recommendations
+1.Segment Vulnerability: The Consumer segment exhibits the highest total volume of churned users compared to Corporate and VIP tiers.
+
+2.High-Value Account Risk: Isolated top accounts with historical spend exceeding high-value thresholds who have lapsed >180 days to prioritize localized retention outreach.
+
+3.Channel Performance: Payment method trends indicate specific drop-offs in cash-on-delivery transactions versus digital wallet purchases.
+
+## 📂 Repository Structure
+
+├── Customer_Churn_Analysis.pbix  # Main Power BI Workbook File
+├── dashboard_screenshot.png      # High-resolution Dashboard Output
+├── README.md                     # Project Documentation & Insights
