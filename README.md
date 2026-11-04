@@ -6,7 +6,7 @@ An end-to-end data analytics project designed to evaluate customer retention, id
 
 ## 📸 Dashboard Overview
 
-![Customer Churn Dashboard](dashboard_screenshot.png)
+![Customer Churn Dashboard](Customer%20Churn%20Analysis%20for%20Customer%20Retention%20Dashboard.png)
 
 ---
 
