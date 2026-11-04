@@ -71,7 +71,11 @@ Churn Rate % = DIVIDE([Churned Customers], [Total Customers], 0) * 100
 
 ## 📂 Repository Structure
 
-├── Customer_Churn_Analysis.pbix  # Main Power BI Workbook File
+├── Customer Churn Analysis for Customer Retention.ipynb        #Jupter Notebook Python File
+
+├── Churn_analysis.sql             #mysql queries
+
+├── Customer Churn Analysis for Customer Retention Dashboard.pbix  # Main Power BI Workbook File
 
 ├── dashboard_screenshot.png      # High-resolution Dashboard Output
 
