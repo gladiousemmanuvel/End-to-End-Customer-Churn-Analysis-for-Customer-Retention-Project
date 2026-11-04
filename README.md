@@ -1,4 +1,4 @@
-# 📊 Customer Churn Analysis & Retention Intelligence Dashboard
+# 📊 Customer Churn Analysis & Customer Retention Dashboard
 
 An end-to-end data analytics project designed to evaluate customer retention, identify churn drivers, and isolate high-value accounts at risk for an e-commerce platform using **MySQL**, **Power BI**, and **DAX Modeling**.
 
